@@ -1,0 +1,43 @@
+.com2back {
+  background-color: #2b1e16;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+}
+.comp3grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.comp3head {
+  font-size: 40px;
+  font-weight: 600;
+  width: 300px;
+  padding-top: 25vh;
+}
+.comp3sub {
+  font-size: 20px;
+  width: 400px;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  color: #7e808c;
+}
+.imgsize {
+  max-width: 400px;
+  height: fit-content;
+  width: 45%;
+}
+.imgHidden {
+  display: flex;
+}
+@media (max-width: 700px) {
+  .imgHidden {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .comp3sub {
+    width: auto;
+  }
+}
