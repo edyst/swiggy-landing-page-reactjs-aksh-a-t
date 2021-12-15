@@ -70,7 +70,7 @@ const Component1 = () => {
                 }}
                 value={inputVal}
                 autoFocus
-                maxLength="16"
+                maxLength={16}
                 className="inputcss"
                 placeholder="Enter Your delivery location"
               />

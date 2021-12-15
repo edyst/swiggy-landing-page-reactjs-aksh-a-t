@@ -12,19 +12,19 @@ const Footer = () => {
           <div>
             <div className="footHeading">COMPANY</div>
             <ul className="ulStyle">
-              <MapFooterData data={data.COMPANY[0]} />
+              <MapFooterData data={data.COMPANY[0]} links={null} end={null} />
             </ul>
           </div>
           <div>
             <div className="footHeading">CONTACT</div>
             <ul className="ulStyle">
-              <MapFooterData data={data.CONTACT[0]} links={data.CONTACT[1]} />
+              <MapFooterData data={data.CONTACT[0]} end={null} links={data.CONTACT[1]} />
             </ul>
           </div>
           <div>
             <div className="footHeading">LEGAL</div>
             <ul className="ulStyle">
-              <MapFooterData data={data.LEGAL} />
+              <MapFooterData data={data.LEGAL} links={null} end={null} />
             </ul>
           </div>
           <div style={{ width: "220px" }}>
@@ -37,17 +37,21 @@ const Footer = () => {
         <div style={{ marginTop: "30px" }}>
           <div className="footHeading">WE DELIVER TO</div>
           <ul className="ulStyle footerMid hidden">
-            <MapFooterData data={data.DELIVER} />
+            <MapFooterData end={null} links={null} data={data.DELIVER} />
           </ul>
           <ul
             style={{ gridTemplateRows: `repeat(${initialval / 2},1fr)` }}
             className="ulStyle hidden2"
           >
-            <MapFooterData data={data.DELIVER} end={initialval} />
+            <MapFooterData data={data.DELIVER} links={null} end={initialval} />
           </ul>
           <button
             className="hidden2btn"
-            onClick={() => setVal(initialval + 10)}
+            onClick={() => {
+              if(initialval<=550){
+              setVal((prev)=>prev + 10)}
+              }}
+            // disabled="true"
           >
             Load More
           </button>
@@ -57,7 +61,7 @@ const Footer = () => {
           <div>
             <a className="link" href="https://www.swiggy.com">
               <img
-                heigth="42px  "
+                height="42px  "
                 width="142px"
                 alt="img"
                 src="	https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"

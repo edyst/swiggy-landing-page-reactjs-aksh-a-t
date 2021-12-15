@@ -17,7 +17,7 @@ const SubComponent2 = ({ imgSrc, heading, content, hei, wid, padd }) => {
             style={{
               color: "white",
               fontSize: "20px",
-              fontWeight: "600",
+              // fontWeight: {600},
               marginTop: "50px",
               marginBottom: "0px",
             }}

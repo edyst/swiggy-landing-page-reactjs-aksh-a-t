@@ -19,6 +19,7 @@ const Component2 = () => {
           content="Know where your order is at all times, from the restaurant to your doorstep"
           hei="206"
           wid="112"
+          padd={null}
         />
         <SubComponent2
           imgSrc="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
